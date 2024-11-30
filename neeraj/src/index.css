@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.image{
+background-image: url('https://res.cloudinary.com/dvzqfoyif/image/upload/v1732778272/logo4_eb4leb.jpg');
+}
