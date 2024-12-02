@@ -23,7 +23,7 @@ export default function Sign() {
             const url = `http://localhost:5000/CreaterUser`;
             const user = await axios.post(url, signupdata)
             if (user.status === false) { window.alert("invalid data") }
-            else { navigater('/Otp') }
+            else { navigater('/Otpverification') }
 
         }
         catch (e) { window.alert(e.response.data.msg) }
@@ -48,7 +48,7 @@ export default function Sign() {
 
 
 
-                    <Link to="/Otpverification" className='pl-20 h-12 ring-2 ring-transparent  rounded-md pt-2' > <button className='pl-75 text-2xl text-white'>   OTP VERIFICATION</button></Link>
+                    <Link to="/Login" className='h-12 ring-2 ring-transparent  rounded-md pt-2' > <button className=' text-xl ml-10 text-white'> Do you have account ? Login</button></Link>
                     <button onClick={SignupDataBase} className=' ring-2 h-12 text-white rounded-md bg-blue-800'> SIGN</button>
                 </div>
             </div>

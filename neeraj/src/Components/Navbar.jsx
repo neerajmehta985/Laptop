@@ -12,10 +12,10 @@ const Navmenu=[{Name:"", href:""},
 
 ]
   return (
-   <nav className='flex justify-between items-center  bg-orange-100 h-20'>
-<div> <img src={logo} className='w-20 h-8 ml-2 flex items-center '  alt="" /></div>
+   <nav className='flex justify-between items-center  bg-slate-600  h-20'>
+<div> <img src={logo} className=' w-[100px] ml-5 hover:scale-125 '  alt="" /></div>
 <div className='flex item-center '>
- <input type="search" name="" id="" className='w-96 h-[8vh] rounded-md hidden md:flex' />
+ <input type="search" name="" id=""  placeholder=" find anything" className='w-96 h-[8vh] rounded-md hidden md:flex ' />
    </div>
 <div>
 <ul className=' justify-between items-center gap-7 mr-10 hidden md:flex' >
